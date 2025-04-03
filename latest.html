@@ -136,7 +136,10 @@ border-radius: 0px 0px 10px 10px;
                     <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizN()">NO</div>
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-                    <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span id="claim" style="color: #22c55e;">69</span> Personas Están Reclamando Ahora Mismo</em></p>
+                    <div class="pulse"></div>
+                    <p style="text-align: center; margin-left: 10px; font-size: 14px;">
+                        <em><span id="claim" style="color: #22c55e;">69</span> Personas Están Reclamando Ahora Mismo</em>
+                    </p>
                 </div>
             </div>
         </div>
@@ -287,17 +290,17 @@ border-radius: 0px 0px 10px 10px;
             const mainContent = document.getElementById("mainContent");
             mainContent.classList.add("hidden");
             statusDiv.classList.remove("hidden");
-            statusMessage.textContent = "Reviewing Your Answers...";
+            statusMessage.textContent = "Revisando Tus Respuestas...";
 
             setTimeout(() => {
-                statusMessage.textContent = "Matching With Best Options...";
+                statusMessage.textContent = "Buscando Las Mejores Opciones...";
                 setTimeout(() => {
-                    statusMessage.textContent = "Confirming Eligibility...";
+                    statusMessage.textContent = "Confirmando Elegibilidad...";
                     setTimeout(() => {
                         setStep("completed");
-                    }, 1500);
-                }, 1500);
-            }, 1500);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
         };
 
         function setStep(newStep) {
