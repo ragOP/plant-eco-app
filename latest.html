@@ -109,13 +109,13 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
             <div class="main-descrition-5-5">
                 <div class="main-des-title-6-7">
                     <b>
-                        Final Call For Seniors To Claim Their  <span
-                            style="color: #03b55f;"> $40,000</span> Burial Protection Plan! 
+                        Oportunidad Final Para Que Los Estadounidenses Reclamen Su Seguro Médico Gratis De Por Vida
+
                     </b>
                 </div>
                 <img style="width: 83%; margin-left: 0%; border-radius: 7px;" class="topic-img-middle-z" src="./sha.png" alt="head" />
                 <div style="margin-top: 10px; text-align: center; font-size: 16px; font-weight: 900;line-height: 20px; margin-bottom: 0;" class="main-des-5">
-                    Checking your eligibility is very simple and takes just 60 seconds, simply answer the questions below to see if you qualify now.
+                    Verificar tu elegibilidad es muy simple y toma solo 60 segundos, simplemente responde las preguntas a continuación para ver si calificas ahora.
                     <br /><br />
                 </div>
                 <div style="margin-bottom: 20px; margin-top: -10px;"><i style="font-size: 24px;" class="fa-solid fa-angle-down"></i></div>
@@ -138,11 +138,11 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 border-radius: 0px 0px 10px 10px;
             ">
                 <div class="quiz-5" id="btn" style="text-align: center;">
-                    <span id="quizQuestion">1. Are you over 55?</span>
+                    <span id="quizQuestion">1 . ¿Tienes más de 18 años?</span>
                 </div>
                 <div class="answer" id="answerOptions">
-                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizP()">YES, I’M 55 OR OLDER</div>
-                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizN()">NO, I’M 54 AND YOUNGER</div>
+                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizP()">SÍ</div>
+                    <div style="border-radius: 25px; font-size: 22px;" class="answer-btn-5" onclick="handleQuizN()">NO</div>
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
                     <div class="pulse"></div><p style="text-align: center; margin-left: 10px;"></p><em> <span id="claim" style="color: #22c55e;">69</span> People Are Claiming Right Now!</em></p>
@@ -152,11 +152,11 @@ border-radius: 0px 0px 10px 10px;
 
       
         <div class="checking hidden" id="congratulations">
-            <div class="congrats">Congratulations, You Qualify 🎉 </div>
+            <div class="congrats">Felicidades, Calificas 🎉 </div>
             <div class="top-description-5" >
-                Make A <b>Quick Call</b> To Claim Your <b>$40,000</b> Burial Protection Plan Now!
+                Haz Una <b>Llamada Rápida</b> Para Reclamar Tu Plan De Seguro Médico Gratis Ahora
             </div>
-            <div class="spots-count">Spots remaining: 4</div>
+            <div class="spots-count">Lugares disponibles: 4</div>
             <!-- <div class="tap-direction">👇 TAP BELOW TO CALL 👇</div> -->
             <div class="call-btn" onclick="handleCall()">
                 <a href="tel:+13214858035">
@@ -169,8 +169,7 @@ border-radius: 0px 0px 10px 10px;
             </div> -->
             <!-- <div class="sub-title">We Have Reserved Your Spot</div> -->
             <div class="sub-description">
-                Due to high call volume, your official agent is waiting for only <b>3 minutes</b>, then your spot will
-                not be reserved.
+                Debido al alto volumen de llamadas, tu agente oficial esperará solo 3 minutos, luego tu lugar no será reservado.
             </div>
             <div class="timer">
                 <div class="timer-cell" id="minutes">3</div>
@@ -180,7 +179,7 @@ border-radius: 0px 0px 10px 10px;
         </div>
 
         <div class="footer2" style="margin-top: 25vh;">
-            Beware of other fraudulent & similar-looking websites that might look exactly like ours, we have no affiliation with them. This is the only official website to claim your Burial Protection Plan with the domain name burialprotectionplan.org.
+            Cuidado con otros sitios web fraudulentos y similares que podrían verse exactamente como el nuestro, no tenemos ninguna afiliación con ellos. Este es el único sitio web oficial para reclamar tu Seguro Médico Gratis con el nombre de dominio plangratis.org.
             <!-- <p>We represent Medicare Advantage HMO, PPO and PFFS organizations and stand-alone PDP prescription drug plans that are contracted with Medicare. Enrollment depends on the plan’s contract renewal."
             </p>
             <p>Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply.
@@ -205,7 +204,7 @@ border-radius: 0px 0px 10px 10px;
 
     <script>
         let step = "process";
-        let quizQuestion = "Are you over the age of 64?";
+        let quizQuestion = "1 . ¿Tienes más de 18 años?";
         const statusDiv = document.getElementById("status");
         const statusMessage = document.getElementById("statusMessage");
         const congratulationsDiv = document.getElementById("congratulations");
@@ -235,8 +234,8 @@ border-radius: 0px 0px 10px 10px;
         }, 3000);
 
         function handleQuizP() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
+            if (quizQuestion === "1 . ¿Tienes más de 18 años?") {
+                quizQuestion = "2. ¿Ganas menos de $80,000 al año?";
                 quizText.textContent = quizQuestion;
                 setYesNoOptions();
                 smoothScrollToTop(1000, 432);
@@ -246,8 +245,8 @@ border-radius: 0px 0px 10px 10px;
         }
 
         function handleQuizN() {
-            if (quizQuestion === "Are you over the age of 64?") {
-                quizQuestion = "2. Do you live in the United States?";
+            if (quizQuestion === "1 . ¿Tienes más de 18 años?") {
+                quizQuestion = "2. ¿Ganas menos de $80,000 al año?";
                 quizText.textContent = quizQuestion;
                 setYesNoOptions();
                 smoothScrollToTop(1000, 632);
